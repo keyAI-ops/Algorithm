@@ -1,3 +1,4 @@
+# 선형검색
 from typing import Any, Sequence
 
 def bin_search(a:Sequence, key:Any) -> int:
@@ -17,5 +18,3 @@ def bin_search(a:Sequence, key:Any) -> int:
         if pl > pr:
             break
         return -1
-    
-                

@@ -2,7 +2,7 @@ from __future__ import annotations
 from typing import Any, Type
 import hashlib
 
-
+ 
 class Node: # 해시 구성 노드
     def __init__(self, key: Any, value: Any, next: Node) -> None:
         self.key   = key    
@@ -54,7 +54,7 @@ class ChainedHash:
         # 키가 key인 원소를 삭제
         hash = self.hash_value(key)  # 삭제할 키의 해시값
         p = self.table[hash]         # 주목하고 있는 노드
-        pp = None                    # 바로 앞 주목 노드
+        pp = None                   
 
         while p is not None:
             if p.key == key:  # key를 발견하면 아래를 실행

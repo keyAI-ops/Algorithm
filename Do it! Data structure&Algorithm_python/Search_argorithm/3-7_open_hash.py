@@ -3,7 +3,7 @@ from typing import Any, Type
 from enum import Enum
 import hashlib
 
-# 버킷의 속성
+# 버킷의 속성  
 class Status(Enum):
     OCCUPIED = 0  # 데이터를 저장
     EMPTY = 1     # 비어 있음
