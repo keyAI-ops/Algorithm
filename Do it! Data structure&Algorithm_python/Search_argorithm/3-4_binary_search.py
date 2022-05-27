@@ -1,4 +1,3 @@
-# 선형검색
 from typing import Any, Sequence
 
 def bin_search(a:Sequence, key:Any) -> int:
