@@ -6,7 +6,7 @@ list_dir = input('방향을 입력하세요 : ').split()
 
 x, y = 1, 1
 
-dx = [0,0,-1,1]
+dx = [0,0,-1,1] 
 dy = [-1,1,0,0]
 move_types = ['L', 'R', 'U', 'D']
 
