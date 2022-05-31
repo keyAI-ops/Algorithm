@@ -1,4 +1,5 @@
 from typing import MutableSequence
+import bisect
 
 def insertion_sort(a: MutableSequence) -> None:
     n = len(a)
@@ -34,4 +35,10 @@ def binary_insertion_sort(a: MutableSequence) -> None:
         for j in range(i, pd, -1):
             a[j] = a[j-1]
         a[pd] = key
-            
+    
+    
+# 다음과 같이 모듈을 사용해 간단히 이진 삽입 정렬을 구현
+def binary_insertion_sort(a: MutableSequence) -> None:
+    for i in range(1, len(a)):
+        bisect.insort(a, a.pop(i), 0, i)
+        # bisect.insort(a, x, lo, hi)를 호출하면 a가 이미 정렬된 상태를 유지하면서 a[lo]~a[hi] 사이에 x를 삽입
