@@ -9,3 +9,4 @@ def solution(num_str):
             result += num
         else:
             result *= num
+    return result

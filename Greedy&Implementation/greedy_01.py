@@ -8,6 +8,7 @@ def solution(n, k):
         else:
             n -= 1
         count += 1
+    return count
 
 ''' 모범 답안 
 while True:
