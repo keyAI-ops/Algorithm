@@ -1,5 +1,19 @@
 # <문제> 왕실의 나이트
 
+def solution(location):
+    row = list(range(1,9))
+    column = ['a','b','c','d','e','f','g','h']
+    
+    
+
+
+
+
+
+
+
+
+'''
 row = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
 column = ['1', '2', '3', '4', '5', '6', '7', '8']
 
@@ -29,3 +43,4 @@ for move in moves:
         count += 1
 
 print(count)
+'''
