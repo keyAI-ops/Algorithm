@@ -1,20 +1,13 @@
 # <문제> 1이 될 때까지
 
-n = int(input('N을 입력하세요 : '))
-k = int(input('K을 입력하세요 : '))
-
-count = 0
-
-while True:
-    if n%k == 0:
-        n = n/k
+def solution(n, k):
+    count = 0
+    while n != 1:
+        if n%k == 0:
+            n = n/k
+        else:
+            n -= 1
         count += 1
-    else:
-        n -= 1
-        
-    if n == 1:
-        break
-print(count)
 
 ''' 모범 답안 
 while True:
