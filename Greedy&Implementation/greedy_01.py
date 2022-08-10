@@ -10,6 +10,7 @@ def solution(n, k):
         count += 1
     return count
 
+
 ''' 모범 답안 
 while True:
     target = (n//k) * k
