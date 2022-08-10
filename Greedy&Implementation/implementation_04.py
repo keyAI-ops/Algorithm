@@ -1,40 +1,30 @@
 # <문제> 문자열 재정렬
 
-from unittest import result
-
-
 def solution(pro_str):
     alphabet_str = ""
-    num_str = ""
+    num_sum = 0
     
     for i in pro_str:
         if ord(i) >= 65 and ord(i) <= 90:
             alphabet_str += i
         else:
-            num_str += i
+            num_sum += int(i)
     alphabet_str = "".join(sorted(alphabet_str))
-    num_str  = "".join(sorted(num_str))
-    result = alphabet_str + num_str
+    num_sum  = str(num_sum)
+    result = alphabet_str + num_sum
     print(result)
-
+    return result
 solution("K1KA5CB7")
         
 '''
-str_num = list(input('문자열을 입력하세요 : '))
-
-str_num.sort()
-
-result = 0
-result2 = []
-
-for i in str_num:
-    if ord(i) < 65:
-        result += int(i)
+for x in data:
+    if x.isalpha():
+        result.append(x)
     else:
-        result2.append(i)
+        value += int(x)
+result.sort()
 
-result2 = ''.join(result2)
-result3 = result2+str(result)
-
-print(result3)
+if value != 0:
+    result.append(str(value))
+print(''.join(result))
 '''
