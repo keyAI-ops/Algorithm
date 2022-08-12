@@ -1,4 +1,4 @@
-
+# 두 배열의 원소 교쳬
 
 n, k = map(int, input('N, K를 입력하세요 : ').split())
 
@@ -21,5 +21,3 @@ for i in range(k):
         list_a[i], list_b[i] = list_b[i], list_a[i]
     else:
         continue
-
-print(sum(list_a))
