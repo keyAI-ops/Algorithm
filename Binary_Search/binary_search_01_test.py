@@ -11,6 +11,7 @@ while True:
     for i in dduk_list:
         if i > mid:
            list_a.append(i-mid)
+           
     if sum(list_a) > m:
         mid += 1
     elif sum(list_a) < m:
@@ -19,39 +20,3 @@ while True:
         break
 
 print(mid)
-                
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-
-
-list_a = []
-
-mid = int((dduk_list[0]+dduk_list[-1])/2)
-
-for i in dduk_list:
-    if i > mid:
-        list_a.append(i)
-
-while True:
-    if sum(list_a)-(mid*len(list_a)) > m:
-        mid += 1
-    elif sum(list_a)-(mid*len(list_a)) < m:
-        mid -= 1
-    else:
-        break
-print(mid)
-
-'''
