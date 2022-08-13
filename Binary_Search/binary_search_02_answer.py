@@ -1,3 +1,5 @@
+# <문제> 정렬된 배열에서 특정 수의 개수 구하기
+
 from bisect import bisect_left, bisect_right
 
 
